@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dondapadu T&P
+	</title>
+	<script>
+		function submitdata()
+{
+		var usernames=[{hmm:'srikanth',mmh:'guduru'},{hmm:'saipriyanka',mmh:'gottipati'},{hmm:'kavyavenkatasaisuma',mmh:'chunduri'},{hmm:'jabeena',mmh:'shaik'},{hmm:'sivanagajyothi',mmh:'kuthada'},{hmm:'harichandana',mmh:'nalluri'}]
+		var formusername=document.getElementById('hmm').value;
+		var formpassword=document.getElementById('mmh').value;
+		var found=0;
+		for(i=0;i<usernames.length;i++){
+			if(formusername==usernames[i].hmm&&usernames[i].mmh==formpassword){
+			found=1;
+			}
+		}
+			if(found){
+			alert('user details you entered is correct');
+		
+			}
+			else
+			{
+			alert('incorrect user details');
+			return false;
+			}
+			}
+	</script>
+	<style>
+		
+
+		body{
+			background-color:#FF9900;
+		
+			}
+		.main{
+			border:2px solid blue;
+			
+			width:1010px;
+			margin:auto;
+			overflow:hidden;
+			background-color:#fff;
+			
+			}
+		ul{
+			list-style:none;
+			text-align:left;
+			margin: 0px;
+			padding: 0px;
+			}
+		
+		ul ul{
+		display:none;
+		position:absolute;
+				}
+		ul li:hover ul li ul{
+		padding-top:50%;
+		}
+		.nav,.bus{
+		list-style:none;
+			}
+		h4, p,h3{
+			margin:0px;
+			padding:0px;
+			}
+		.bus li{ background-color:#006CB4;
+		padding:10px 0px;
+		}
+		.nav >li{
+			background-color:#006CB4;
+			float:left;
+			min-width:20%;
+			text-align:center;
+
+			}
+		.nav li a{
+			text-decoration:none;
+			color:#0ff;
+			font-size:19px;
+			display:inline-block;
+			width:100%;
+		
+			
+		}
+		.nav > li > a  {
+
+			padding:10px 0px;
+			}
+		
+		.nav li:hover,.bus li:hover{
+						background-color:yellow;
+					}
+		li:hover ul li:hover{
+				background-color:#BB79A9;
+				}
+		li:hover > ul{
+				display:block;
+				}			
+		li:hover ul li{
+			background-color:#abc143;
+		}
+		.bus li{
+		float:left;
+		min-width:25%;
+		text-align:center;
+		}
+		.bus li a{
+			text-decoration:none;
+			color:#89C5E0;
+			font-size:19px;
+			}
+		.bus{
+		padding:10px 0px;}
+		ul ul ul{  
+		left: 100%;
+	top:-10px;
+	padding:10px 0px;
+				}
+				
+			.login {
+		background-color:lightgreen;
+		position: absolute;
+		top: 30%;
+		right: 15%;
+		padding: 20px;
+		}
+			
+			.cse{
+				padding-left:5px;}
+			img{
+				height:432px;
+				width:100%;}
+						</style>
+</head>
+<body><div class="main">
+		<div class="header" style="overflow:hidden;">
+		<nav>
+			
+	<ul class="nav">
+				<li><a href="donda.html">Home</a></li>
+				<li><a href="recruit.html">Why to recruit</a></li>
+				<li><a href="">Training and Placement</a>
+				<ul>
+				<li><a href="place.html">Placement summary</a></li>
+				<li><a href="train.html">Training summary</a></li>
+				<li><a href="present.html">Present recruiters</a></li>
+				<li><a href="">Past recruiters</a>
+				<ul>
+				<li><a href="https://www.infosys.com/about/">Infosys</a></li>
+				<li><a href="https://www.microsoft.com/en-in/">Microsoft</a></li>
+				<li><a href="http://www.tcs.com/Pages/default.aspx">TCS</a></li>
+				</ul>
+				</li>
+				</ul>
+				</li>
+				<li><a href="student.html">Student profiles</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+				</ul>
+				</nav>
+		</div>
+		<div class="content">
+		<div>
+		
+		<div class="image">
+			<img src="http://www.bestcollegereviews.org/wp-content/uploads/2014/09/lead.jpg"/>
+		</div>
+		<form method="get" action="http://www.google.co.in" name="form" onsubmit="return submitdata()">
+	
+		<div class="login">
+		<div>
+			<div>Name:</div>
+			<input type="text" id="hmm"/>
+		</div>
+		<div>
+			<div>password:</div>
+			<input type="password"  id="mmh"/>
+		</div>
+		<div style="margin-top: 20px;">
+			<input type="submit"/>
+		</div>
+		
+	
+		</div>
+		</form>
+		<div class="cse">
+			<p><h3><b style="color:green">Training is everything. The peach was once a bitter almond; cauliflower is nothing but cabbage with a college education.This is the type of education which is provided by our Amaravathi Engineering College.</b></h3></p>
+			<h4 style="color:red">Vision:</h4>
+<p>To be a leading institution of engineering education and research,preparing students for leadership in their fields in a caring and challenging environment.</p>
+
+<h4 style="color:red">Mission:</h4>
+<p>To produce quality engineers by providing state-of-the-art engineering education....</p>
+
+		</div>
+
+		</div>
+		</div>
+		<div class="footer">
+		<div class="follow">
+			<ul class="bus">
+				<li><a href="college.html">college information</a></li>
+				<li><a href="address.html">Address</a></li>
+				<li><a href="academics.html">Academics</a></li>
+				<li><a href="help.html">Help desk</a></li>
+				
+				
+			</ul>
+		</div>
+		</div>
+		
+	</div>
+	
+</body>
+</html>

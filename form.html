@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>input form
+	</title>
+	<script>
+		function submitdata()
+{
+		var usernames=[{hmm:'srikanth',mmh:'guduru'},{hmm:'saipriyanka',mmh:'gottipati'}]
+		var formusername=document.getElementById('hmm').value;
+		var formpassword=document.getElementById('mmh').value;
+		var found=0;
+		for(i=0;i<usernames.length;i++){
+			if(formusername==usernames[i].hmm&&usernames[i].mmh==formpassword){
+			found=1;
+			}
+		}
+			if(found){
+			alert('user details you entered is correct');
+			}
+			else
+			{
+			alert('incorrect user details');
+			return false;
+			}
+			}
+	</script>
+	</head>
+	<body>
+	
+	<form method="get" action="http://www.google.com" name="form" onsubmit="return submitdata()">
+	<table border="1" width="50%" align="center">
+	<tr>
+	<th colspan="2"><font size="10" color="red" face="times new roman" align="center">form</font></th>
+	<tr>
+	<td>User name</td><td><input type="text" name="user" id="hmm" maxlength="15" size="10" placeholder="enter user name"/></td></tr>
+	<tr><td>password</td><td><input type="password" name="pwd" id="mmh" size="10" placeholder="enter your password"/></td></tr>
+	<tr>
+	<th colspan="2"><input type="submit" value="submit" name="su"/>
+	<input type="reset" name="re" value="reset"/>
+	
+	</form>
+	</body>
+</html>
